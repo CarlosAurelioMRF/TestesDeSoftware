@@ -8,7 +8,7 @@ namespace Demo.Tests
         public void FuncionarioFactory_Criar_DeveRetornarTipoFuncionario()
         {
             // Arrange & Act
-            var funcionario = Funcionario.FuncionarioFactory.Criar("Carlos Aurélio", 10000);
+            var funcionario = FuncionarioFactory.Criar("Carlos Aurélio", 10000);
 
             // Assert
             Assert.IsType<Funcionario>(funcionario);
@@ -18,7 +18,7 @@ namespace Demo.Tests
         public void FuncionarioFactory_Criar_DeveRetornarTipoDerivadoPessoa()
         {
             // Arrange & Act
-            var funcionario = Funcionario.FuncionarioFactory.Criar("Carlos Aurélio", 10000);
+            var funcionario = FuncionarioFactory.Criar("Carlos Aurélio", 10000);
 
             // Assert
             Assert.IsAssignableFrom<Pessoa>(funcionario);
